@@ -31,6 +31,7 @@ Vanila Javascript 사용하여 aribnb 클론 해보기 프로젝트
       display: none;
     }
 
+  - CSS Position = 문서상에 요소를 배치하는 방법
 
 ## css reset 코드
 
