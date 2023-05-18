@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,11 +46,11 @@ table {
 	border-spacing: 0;
 }
 
+/* HAEDER */
 button{
   background-color: transparent;
   border: none;
 }
-
 header{
   display: flex;
   justify-content: space-between;
@@ -65,8 +64,6 @@ header{
   height: 64px;
   cursor: pointer;
 }
-
-
 #little-search {
   display: flex;
   padding: 0 8px;
@@ -81,7 +78,6 @@ header{
   cursor: pointer;
 
 }
-
 #little-search + {
   cursor: pointer;
 }
@@ -141,11 +137,9 @@ header{
   cursor: pointer;
   border-radius: 22px;
 }
-
 #do-airbnb:hover {
   background-color: #f7f7f7f7;
 }
-
 #profile-section {
   display: flex;
   padding: 5px 5px 5px 12px;
@@ -155,7 +149,45 @@ header{
   cursor: pointer;
   gap: 12px;   /*flex items 간의 간격  */
 }
-
 #profile-section:hover {
   box-shadow: 0 2px 4px rgb(0,0,0,0.18);
 }
+
+/* CATAGPRY BAR */
+
+#catagory-bar {
+  display: flex;
+  gap: 32px;
+  padding: 20px 40px 0;
+  overflow: auto;
+}
+#catagory-bar::-webkit-scrollbar {
+  display: none;
+}
+.active-img {
+  display: none;
+}
+.catagory-button{
+  color: #717171;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.catagory-button img {
+  width: 28px;
+}
+.catagory-button:hover {
+  color: #000000;
+  border-bottom: 2px solid #DDDDDD;
+}
+#active-catagory-button{
+  color: #000000;
+  border-bottom: 2px solid #000000;
+}
+#active-catagory-button .active-img {
+  display: inline-block;
+}
+#active-catagory-button .inactive-img {
+  display: none;
+}
+

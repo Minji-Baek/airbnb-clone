@@ -2,17 +2,34 @@
 Vanila Javascript 사용하여 aribnb 클론 해보기 프로젝트
 
 
+## Web 이론
+  - DOM (Document Object Model)
+    -- 웹 문서(html)의 객체모델 인터페이스
+    -- 돔은 자바스크립트로 수정될수 있는 api 제공해줌
+    -- method example
+       document.querySelectorAll(), ~~
+
 ## css 많이 사용되는 요소
   
   - display: flex 란?
    
     가로 정렬에 많이 사용됨
     하위 item은 flex: (크게비율) (작게비율) (초기값)  
-    
+                        grow       shrink    basis
+
     -- 정렬기준 => justify-content: space-between 요소간의 간격을 일정
                               space-around 요소간의 간경을 일정(컨테이너와도)
 
     --flex 사용시 => item 사이값 조절 :  gab 사용 편리!
+
+  - view 영역 밖으로 object가 넘칠때 
+    = overflow: auto;
+    사용하면 스크롤로 해당 영역 표시가능
+
+    아래 코드 사용하면 bar가 보이지 않음
+    #catagory-bar::-webkit-scrollbar {
+      display: none;
+    }
 
 
 ## css reset 코드
